@@ -1,9 +1,9 @@
-import spacy
+import spacy_streamlit
 import pytextrank
 import streamlit as st
 from PIL import Image
 
-nlp = spacy.load("en_core_web_lg")
+nlp = spacy_streamlit.load("en_core_web_lg")
 nlp.add_pipe("textrank")
 
 image = Image.open('mitaoe-logo.jpg')
